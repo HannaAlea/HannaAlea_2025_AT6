@@ -1,0 +1,32 @@
+The class UserInputValidator is created to group together methods that handle checking user input.
+
+The method validate_positive_integers is defined inside the class.
+The word "self" refers to the current object being used.
+The parameter "items" is expected to be a list of strings entered by a user.
+
+A short description (docstring) explains that the method accepts a list of strings and returns a list of valid positive integers.
+
+An empty list named valid_numbers is created.
+This list will store only the valid numbers that pass all checks.
+
+A loop goes through each value in the items list one by one.
+Each value is temporarily stored in the variable s.
+
+The program checks if s contains only digits.
+If the string contains anything else such as letters, spaces, or symbols, it is rejected.
+
+If the string passes the digit check, it is converted from text into an integer.
+
+The number is then checked to make sure it is greater than zero.
+This removes zero and negative numbers.
+
+If the number is valid, it is added to the valid_numbers list.
+
+After all values have been checked, a message is shown to tell the user that validation is complete.
+
+The method then returns the list of valid positive integers.
+
+A second method named display_message is defined.
+It takes one input, called message, and prints it to the screen.
+
+This method is used to display a confirmation message after the validation process finishes.
